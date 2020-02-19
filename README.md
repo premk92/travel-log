@@ -1,4 +1,21 @@
 # travel-log
 Source: https://www.youtube.com/watch?v=5pQsl9u_10M
-1. Install dependencies (Express, Cors, Morgan (Logging), helmet (middle for secure headers))
-2. Intall Dev Dependencies - eslint, nodemon (npm i -D eslint nodemon)
+1. [x] Install dependencies (Express, Cors, Morgan (Logging), helmet (middle for secure headers))
+2. [x] Intall Dev Dependencies - eslint, nodemon (npm i -D eslint nodemon)
+3. [x] Create an express app and listen to the port 1337 and set up the scripts (node, nodemon, eslint)
+            To Install ESLINT: Command: npx eslint --init
+            Start the Server : npm run dev
+
+Setup Not Found and Error Middlewares
+Model DB
+What data will we store?
+Setup Mongoose Model(s)
+POST /logs
+Create a new log entry
+GET / logs
+List all log entries
+Setup Client
+Create Form to add a new entry
+Setup Map SDK on client
+List all log entries on map
+DEPLOY!
