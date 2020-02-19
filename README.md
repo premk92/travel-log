@@ -1,3 +1,3 @@
 # travel-log
 
-This is a travel log application
+This is a travel log application edited
