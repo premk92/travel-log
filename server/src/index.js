@@ -4,6 +4,9 @@ const morgan = require('morgan');
 const helmet = require('helmet')
 const cors = require('cors');
 
+//Import Middlewares
+const middlewares = require('./middlewares')
+
 //Create the App
 const app = express();
 
@@ -22,22 +25,10 @@ app.get('/',(req,res)=>{
 });
 
 //Not DoundHandle error if routes doesn't match any of the above
-app.use((req,res,next)=>{
-    const error = new Error(`Not Found - ${req.originalUrl}`);
-    res.status(404);
-    next(error); // Error goes to the actual Error Handling Middleware
-});
+app.use((middlewares.notFound));
 
 //Error Handling Middleware
-app.use((error, req, res, next)=>{
-    const statusCode = res.statusCode === 200 ? 500 : res.statusCode;
-    res.status(statusCode);
-    res.json({
-        message: error.message,
-        stack : process.env.NODE_ENV === 'production'? 'Error for production' :  error.stack,
-
-    });
-});
+app.use(middlewares.errorHandler);
 
 const port = process.env.PORT || 1337;
 app.listen(port,()=>{

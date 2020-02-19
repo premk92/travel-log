@@ -1,17 +1,21 @@
-# travel-log
-Source: https://www.youtube.com/watch?v=5pQsl9u_10M
-[x] Install dependencies (Express, Cors, Morgan (Logging), helmet (middle for secure headers))
-[x] Intall Dev Dependencies - eslint, nodemon (npm i -D eslint nodemon)
-[x] Create an express app and listen to the port 1337 and set up the scripts (node, nodemon, eslint)
-    * To Install ESLINT: Command: npx eslint --init
-    * Start the Server : npm run dev
-[x] Add Middlewares in the express app 
-    * Morgan, Helmet and Cors
-    * Set up Json API for error response (app.get('/'))
-    * Set up Not found error handle for invalid routes
-    * Set up Error handling middle ware
+# Full Stack Application For Travel Log
 
-Setup Not Found and Error Middlewares
+Source: https://www.youtube.com/watch?v=5pQsl9u_10M
+
+### TODO
+
+* [x] Install dependencies (Express, Cors, Morgan (Logging), helmet (middle for secure headers))
+* [x] Intall Dev Dependencies - eslint, nodemon (npm i -D eslint nodemon)
+* [x] Create an express app and listen to the port 1337 and set up the scripts (node, nodemon, eslint)
+    *  [x] To Install ESLINT: Command: npx eslint --init
+    * [x] Start the Server : npm run dev
+* [x] Add Middlewares in the express app 
+    * [x] Morgan, Helmet and Cors
+    * [x] Set up Json API for error response (app.get('/'))
+    * [x] Set up Not found error handle for invalid routes
+    * [x] Set up Error handling middle ware
+    * [x] Move Error Handling to separate middleware file
+
 Model DB
 What data will we store?
 Setup Mongoose Model(s)
