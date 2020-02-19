@@ -15,8 +15,12 @@ Source: https://www.youtube.com/watch?v=5pQsl9u_10M
     * [x] Set up Not found error handle for invalid routes
     * [x] Set up Error handling middle ware
     * [x] Move Error Handling to separate middleware file
+* [x] Model DB
+    * [x] Install Mongoose(Mongo DB Orm) inside Server Folder (npm i mongoose)
+    * [x] Create the Mongoose Schema Model
 
-Model DB
+
+
 What data will we store?
 Setup Mongoose Model(s)
 POST /logs
