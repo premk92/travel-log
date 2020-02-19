@@ -1,3 +1,4 @@
 # travel-log
 
-This is a travel log application edited
+1. Install dependencies (Express, Cors, Morgan (Logging), helmet (middle for secure headers))
+2. 
