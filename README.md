@@ -1,15 +1,15 @@
 # travel-log
 Source: https://www.youtube.com/watch?v=5pQsl9u_10M
-1. [x] Install dependencies (Express, Cors, Morgan (Logging), helmet (middle for secure headers))
-2. [x] Intall Dev Dependencies - eslint, nodemon (npm i -D eslint nodemon)
-3. [x] Create an express app and listen to the port 1337 and set up the scripts (node, nodemon, eslint)
-           * To Install ESLINT: Command: npx eslint --init
-           * Start the Server : npm run dev
-4. [x] Add Middlewares in the express app 
-           * Morgan, Helmet and Cors
-           * Set up Json API for error response (app.get('/'))
-           * Set up Not found error handle for invalid routes
-           * Set up Error handling middle ware
+[x] Install dependencies (Express, Cors, Morgan (Logging), helmet (middle for secure headers))
+[x] Intall Dev Dependencies - eslint, nodemon (npm i -D eslint nodemon)
+[x] Create an express app and listen to the port 1337 and set up the scripts (node, nodemon, eslint)
+    * To Install ESLINT: Command: npx eslint --init
+    * Start the Server : npm run dev
+[x] Add Middlewares in the express app 
+    * Morgan, Helmet and Cors
+    * Set up Json API for error response (app.get('/'))
+    * Set up Not found error handle for invalid routes
+    * Set up Error handling middle ware
 
 Setup Not Found and Error Middlewares
 Model DB
