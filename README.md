@@ -17,7 +17,8 @@ Source: https://www.youtube.com/watch?v=5pQsl9u_10M
     * [x] Move Error Handling to separate middleware file
 * [x] Model DB
     * [x] Install Mongoose(Mongo DB Orm) inside Server Folder (npm i mongoose)
-    * [x] Create the Mongoose Schema Model
+    * [x] Create the Mongoose Schema Model - 1.14.47
+    * [x] Install .env inside Server (npm i dotenv), Create Env File, Set up the Database connection in Index.js
 
 
 
