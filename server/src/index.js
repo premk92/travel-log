@@ -9,15 +9,17 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 //Import Middlewares
-const middlewares = require('./middlewares')
+const middlewares = require('./middlewares');
+const logs = require('./api/logs');
 
 //Create the App
 const app = express();
 
 //Connect To Database
-mongoose.connect(process.env.DATABASE_URL,{
+mongoose.connect('mongodb://localhost:27017/travellog',{
     useNewUrlParser : true,
-})
+    useUnifiedTopology: true,
+});
 
 //Set up Middle Wares
 app.use(morgan('common')) // Log all incoming requests
@@ -25,13 +27,17 @@ app.use(helmet()); //Hide few headers to prevent from hackers and adds few other
 app.use(cors({
     origin: process.env.CORS_ORIGIN,
 }));
+//Use Body Parsing Middleware
+app.use(express.json());
 
 //Json API for error
 app.get('/',(req,res)=>{
     res.json({
-        message: 'Hello Worlds!',
+        message: 'You made a get request from root folder - /',
     });
 });
+
+app.use('/api/logs',logs);
 
 //Not DoundHandle error if routes doesn't match any of the above
 app.use((middlewares.notFound));
