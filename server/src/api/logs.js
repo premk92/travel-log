@@ -1,6 +1,9 @@
 //Include Router from Express
 const { Router } = require('express');
 
+//Pull LogEntry from models
+const LogEntry = require('../models/LogEntry');
+
 //Create Router
 const router = Router();
 
@@ -10,8 +13,14 @@ router.get('/',(req,res) =>{
     });
 });
 
-router.post('/',(req,res)=>{
-    console.log(req.body);
+router.post('/', async (req,res,next)=>{
+    try{
+        const logEntry = new LogEntry(req.body);
+        const createdEntry = await logEntry.save();
+        res.json(createdEntry)
+    } catch (error){
+        next(error);
+    }
 });
  
 //Export the router

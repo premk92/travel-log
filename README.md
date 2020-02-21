@@ -23,7 +23,8 @@ Source: https://www.youtube.com/watch?v=5pQsl9u_10M
 * [x] POST / logs
     * [x] Create a router (logs.js) for with multiple routes and import the router in index.js
     * [x] Create a router Get request and post request for the route /api/logs in logs.js
-    * [x] Install body parsing middleware (express.json()) in index.js
+    * [x] Install body parsing middleware (express.json()) in index.js - 1.37.11
+    * [x] Attempt To Create A New Entry (Make the post request Async await, Create the entry)
 
 
 What data will we store?
