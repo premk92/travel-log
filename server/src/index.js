@@ -39,13 +39,13 @@ app.get('/',(req,res)=>{
 
 app.use('/api/logs',logs);
 
-//Not DoundHandle error if routes doesn't match any of the above
+//Handle Error If Routes Doesn't Match Any Of The Above
 app.use((middlewares.notFound));
 
-//Error Handling Middleware
+//Handle Errors For Valid Routes
 app.use(middlewares.errorHandler);
 
 const port = process.env.PORT || 1337;
 app.listen(port,()=>{
-    console.log(`Listening at http://localhost:${port}`);
+    console.log(`Travel-Log Application is Listening at http://localhost:${port}`);
 })

@@ -24,7 +24,8 @@ Source: https://www.youtube.com/watch?v=5pQsl9u_10M
     * [x] Create a router (logs.js) for with multiple routes and import the router in index.js
     * [x] Create a router Get request and post request for the route /api/logs in logs.js
     * [x] Install body parsing middleware (express.json()) in index.js - 1.37.11
-    * [x] Attempt To Create A New Entry (Make the post request Async await, Create the entry)
+    * [x] Attempt To Create A New Entry (Make the post request Async await, Create the entry) and handle the errors
+    * [x] Create A Valid Entry
 
 
 What data will we store?
@@ -38,3 +39,14 @@ Create Form to add a new entry
 Setup Map SDK on client
 List all log entries on map
 DEPLOY!
+
+Sample Valid Entry :
+{
+	"title" : "Empire State Building",
+	"comment" : "Visited the top of the building. Great view",
+	"lattitude" : 40.74,
+	"longitude" : -73.98,
+	"rating" : 7,
+	"image":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Empire_State_Building_%28aerial_view%29.jpg/500px-Empire_State_Building_%28aerial_view%29.jpg",
+	"visitDate" : "2020-02-21T13:01:21.605Z"
+}
