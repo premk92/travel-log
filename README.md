@@ -5,7 +5,7 @@ Source: https://www.youtube.com/watch?v=5pQsl9u_10M
 ### TODO
 
 * [x] Install dependencies (Express, Cors, Morgan (Logging), helmet (middle for secure headers))
-* [x] Intall Dev Dependencies - eslint, nodemon (npm i -D eslint nodemon)
+    * [x] Intall Dev Dependencies - eslint, nodemon (npm i -D eslint nodemon)
 * [x] Create an express app and listen to the port 1337 and set up the scripts (node, nodemon, eslint)
     * [x] To Install ESLINT: Command: npx eslint --init
     * [x] Start the Server : npm run dev
