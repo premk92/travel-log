@@ -25,15 +25,11 @@ Source: https://www.youtube.com/watch?v=5pQsl9u_10M
     * [x] Create a router Get request and post request for the route /api/logs in logs.js
     * [x] Install body parsing middleware (express.json()) in index.js - 1.37.11
     * [x] Attempt To Create A New Entry (Make the post request Async await, Create the entry) and handle the errors
-    * [x] Create A Valid Entry
+    * [x] Create A Valid Entry 
+    * [x] Return All Entries Using Modify the Get Route /api/logs - 1.57.40
+* [x] 
 
 
-What data will we store?
-Setup Mongoose Model(s)
-POST /logs
-Create a new log entry
-GET / logs
-List all log entries
 Setup Client
 Create Form to add a new entry
 Setup Map SDK on client
