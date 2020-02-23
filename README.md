@@ -20,14 +20,18 @@ Source: https://www.youtube.com/watch?v=5pQsl9u_10M
     * [x] Create the Mongoose Schema Model - 1.14.47
     * [x] Install .env inside Server (npm i dotenv), Create Env File, Set up the Database connection in Index.js
     * [x] Install Mongo DB - Use 'Mongo' in terminal to get the ip. Mondgo Port: http://localhost:27017/
-* [x] POST / logs
+* [x] POST / logs & Get Logs
     * [x] Create a router (logs.js) for with multiple routes and import the router in index.js
     * [x] Create a router Get request and post request for the route /api/logs in logs.js
     * [x] Install body parsing middleware (express.json()) in index.js - 1.37.11
     * [x] Attempt To Create A New Entry (Make the post request Async await, Create the entry) and handle the errors
     * [x] Create A Valid Entry 
     * [x] Return All Entries Using Modify the Get Route /api/logs - 1.57.40
-* [x] 
+* [x] Setup Client With React
+    * [x] Create a react app (npx create-react-app client) and start the app at 3000 (http://192.168.0.116:3000/)
+    * [x] Create an account with MapBox to get API token & Install React Map GL in client folder (npm i react-map-gl) - 2.28.46
+    
+
 
 
 Setup Client
