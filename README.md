@@ -34,7 +34,6 @@ Source: https://www.youtube.com/watch?v=5pQsl9u_10M
 
 
 
-Setup Client
 Create Form to add a new entry
 Setup Map SDK on client
 List all log entries on map
