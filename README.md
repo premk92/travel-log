@@ -31,6 +31,7 @@ Source: https://www.youtube.com/watch?v=5pQsl9u_10M
     * [x] Create a react app (npx create-react-app client) and start the app at 3000 (http://192.168.0.116:3000/)
     * [x] Create an account with MapBox to get API token & Install React Map GL in client folder (npm i react-map-gl) - 2.28.46
     * [x] Set up the App and Show The Map in React App
+    * [x] Customize the Map and View it in Full Screen - 2.38.36
 
 
 
