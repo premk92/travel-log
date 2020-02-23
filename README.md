@@ -33,6 +33,7 @@ Source: https://www.youtube.com/watch?v=5pQsl9u_10M
     * [x] Set up the App and Show The Map in React App
     * [x] Customize the Map and View it in Full Screen - 2.38.36
     * [x] Fetch The LogEntries From The Server And Show It In Client Console - 2.42.03
+    * [x] Show The Log Entries In The React App - 2.58.19
 
 
 
