@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactMapGL from 'react-map-gl';
+
+import { listLogEntries } from "./API";
 
 const App = () => {
   const [viewport, setViewport] = useState({
@@ -9,6 +11,18 @@ const App = () => {
     longitude: -122.4376,
     zoom: 3
   });
+
+  //Use Effect With Empty Dependency Array To Run The Function Once After Component Is Mounted
+  //Request To Backend
+  useEffect(()=>{
+
+    //Immediately Invoked Function Expression As Await Can't Be Used In Useeffect
+    (async()=>{
+        const logEntries = await listLogEntries();
+        console.log(logEntries);
+    }) ();
+     
+  },[]);
 
   return (
     <ReactMapGL

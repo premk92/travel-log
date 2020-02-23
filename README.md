@@ -32,6 +32,7 @@ Source: https://www.youtube.com/watch?v=5pQsl9u_10M
     * [x] Create an account with MapBox to get API token & Install React Map GL in client folder (npm i react-map-gl) - 2.28.46
     * [x] Set up the App and Show The Map in React App
     * [x] Customize the Map and View it in Full Screen - 2.38.36
+    * [x] Fetch The LogEntries From The Server And Show It In Client Console - 2.42.03
 
 
 

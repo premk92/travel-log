@@ -16,7 +16,7 @@ const logs = require('./api/logs');
 const app = express();
 
 //Connect To Database
-mongoose.connect('mongodb://localhost:27017/travellog',{
+mongoose.connect(process.env.DATABASE_URL,{
     useNewUrlParser : true,
     useUnifiedTopology: true,
 });
@@ -45,7 +45,8 @@ app.use((middlewares.notFound));
 //Handle Errors For Valid Routes
 app.use(middlewares.errorHandler);
 
-const port = process.env.PORT || 1337;
+const port = process.env.PORT || 1338;
 app.listen(port,()=>{
-    console.log(`Travel-Log Application is Listening at http://localhost:${port}`);
+    console.log(`Travel-Log Backend Server is Listening at http://localhost:${port}`);
+    console.log(`CORS_ORIGIN is sett to ${process.env.CORS_ORIGIN}`);
 })
