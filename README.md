@@ -1,4 +1,4 @@
-# Full Stack Application For Travel Log
+# Travel Log Application
 
 
 ### TODO
